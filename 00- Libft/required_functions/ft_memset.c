@@ -1,14 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <lbordona@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 15:45:07 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/02 15:48:13 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/02 15:48:59 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/02 16:51:08 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
 
 int	ft_strlen(char *str)
 {
@@ -20,12 +22,19 @@ int	ft_strlen(char *str)
 	return (len);
 }
 
-/* #include <stdio.h>
-
-int	main(void)
+void *ft_memset(void *s, int c, size_t n)
 {
-	char	str[] = "Lucas";
+	int	i;
 
-	printf("%d", ft_strlen(str));
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if(i <= n)
+		{
+			s[i] = c;
+			write(1, s[i], 1);
+		}
+		i++;
+	}
 	return (0);
-} */
+}

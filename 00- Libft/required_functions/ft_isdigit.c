@@ -1,31 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <lbordona@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 15:45:07 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/02 15:48:13 by lbordona         ###   ########.fr       */
+/*   Created: 2022/11/02 15:07:04 by lbordona          #+#    #+#             */
+/*   Updated: 2022/11/02 15:41:54 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_isdigit(int c)
 {
-	int	len;
-
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	return (len);
+	if (c >= 48 && c <= 57)
+		return (1);
+	else
+		return (0);
 }
 
 /* #include <stdio.h>
+#include <ctype.h>
 
 int	main(void)
 {
-	char	str[] = "Lucas";
+	int		a = 'a';
+	int		b = '1';
 
-	printf("%d", ft_strlen(str));
+	printf("%d", ft_isdigit(a));
+	printf("\n");
+	printf("%d", isdigit(a));
+	printf("\n");
+	printf("\n");
+	printf("%d", ft_isdigit(b));
+	printf("\n");
+	printf("%d", isdigit(b));
 	return (0);
 } */
