@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:26:29 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/03 12:37:13 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/03 15:42:55 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,6 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	return (dest);
 }
 
-//Corrigir libft.h para funcionar o ft_memcpy sem ter que adicionar o codigo dele aqui
-
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*ptr_dest;
@@ -44,9 +42,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (NULL);
 	if (src < dest)
 		while (n--)
-		{
 			ptr_dest[n] = ptr_src[n];
-		}
 	else if (src > dest)
 	{
 		ft_memcpy(dest, src, n);
@@ -56,10 +52,10 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 /* int	main(void)
 {
-	char	dest[] = "Lucas";
-	char	dest1[] = "Lucas";
-	char	src[] = "XYZ";
-	char	src1[] = "XYZ";
+	char	dest[] = "XYZ";
+	char	dest1[] = "XYZ";
+	char	src[] = "Lucas";
+	char	src1[] = "Lucas";
 
 	printf("%s", dest);
 	printf(" / ");
