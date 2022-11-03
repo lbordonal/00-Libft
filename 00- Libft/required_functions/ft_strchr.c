@@ -6,45 +6,40 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:07:22 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/03 15:49:54 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/03 18:03:53 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	while (s[len] != '\0')
-		len++;
-	return (len);
-}
-
 void	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	int		i;
 	char	*str;
 
 	i = 0;
 	str = (char *)s;
-	while (str[i] != c)
+	while (s[i] != c)
 	{
-		if (str[i] == '\0')
+		if (s[i] == '\0')
 		{
 			return (NULL);
 		}
 		i++;
+		str++;
 	}
 	return (str);
 }
 
 /* int		main(void)
 {
-	const char str[] = "Lucas";
-	int	c = 117;
+	char str[] = "Lucas";
+	char	a;
 
-	printf("%ld", ft_strchr(str, c));
+	a = 'u';
+	ft_strchr(str, a);
+	printf("%s", (char *)ft_strchr(str, a));
+	printf("\n");
+	printf("%s", strchr(str, a));
 	return (0);
 } */
