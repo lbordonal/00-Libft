@@ -3,38 +3,39 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbordona <lbordona@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:48:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/02 16:51:08 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:53:07 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-int	ft_strlen(char *str)
+void	*ft_memset(void *s, int c, size_t n)
 {
-	int	len;
+	unsigned char	*ptr;
 
-	len = 0;
-	while (str[len] != '\0')
-		len++;
-	return (len);
-}
-
-void *ft_memset(void *s, int c, size_t n)
-{
-	int	i;
-
-	i = 0;
-	while (s[i] != '\0')
+	ptr = (unsigned char *)s;
+	while (n > 0)
 	{
-		if(i <= n)
-		{
-			s[i] = c;
-			write(1, s[i], 1);
-		}
-		i++;
+		*ptr++ = (unsigned char)c;
+		n--;
 	}
-	return (0);
+	return (s);
 }
+
+/* int	main(void)
+{
+	char	str[] = "Lucas";
+
+	printf("%s", str);
+	printf("\n");
+	ft_memset(str, '.', 2);
+	printf("%s", str);
+	printf("\n");
+	memset(str, '.', 2);
+	printf("%s", str);
+	printf("\n");
+}
+ */

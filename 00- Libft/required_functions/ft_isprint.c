@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbordona <lbordona@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:42:37 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/02 15:44:32 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:41:10 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -18,10 +20,7 @@ int	ft_isprint(int c)
 		return (0);
 }
 
-/* #include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
+/* int	main(void)
 {
 	int		a = 'a';
 	int		b = '1';

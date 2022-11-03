@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbordona <lbordona@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:27:33 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/02 15:43:16 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/03 10:40:51 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -18,10 +20,7 @@ int	ft_isascii(int c)
 		return (0);
 }
 
-/* #include <stdio.h>
-#include <ctype.h>
-
-int	main(void)
+/* int	main(void)
 {
 	int		a = 'a';
 	int		b = '1';

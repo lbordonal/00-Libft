@@ -3,19 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lbordona <lbordona@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:45:07 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/02 15:48:13 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/03 12:30:28 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-	int	len;
+	size_t	len;
 
 	len = 0;
-	while (str[len] != '\0')
+	while (s[len] != '\0')
 		len++;
 	return (len);
 }
