@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 14:24:57 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/04 14:15:21 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/04 17:56:36 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,5 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 	printf("%zu \n", ft_strlcat(dest, src, 7));
 	printf("%s \n", dest);
-	printf("%i \n", strlcat(dest, src, 7));
+//	printf("%i \n", strlcat(dest, src, 7));
 } */
