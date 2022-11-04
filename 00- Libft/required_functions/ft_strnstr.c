@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 12:04:39 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/04 14:47:14 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/04 16:16:11 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	while (big[i] != '\0' && i < len)
 	{
 		j = 0;
-		while ((big[i + j] != '\0') && (little[j] != '\0') && ((i + j) < len) && (big[i + j] == little[j]))
+		while ((big[i + j] != '\0') && (little[j] != '\0')
+			&& ((i + j) < len) && (big[i + j] == little[j]))
 		{
 			if (little[j + 1] != '\0')
 				return ((char *)&(big[i]));
@@ -40,10 +41,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	const char	big[] = "Lucas Lucbs Luccs";
 	const char	little[] = "uc";
 	char	*ptr;
-	char	*ptr2;
+//	char	*ptr2;
 
 	ptr = ft_strnstr(big, little, 5);
-	ptr2 = strnstr(big, little, 5);
+//	ptr2 = strnstr(big, little, 5);
 	printf("%s", "big = ");
 	printf("%s\n", big);
 	printf("%s", "little = ");
@@ -51,14 +52,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	printf("%s\n", "size = 5");
 	printf("%s", "ft_strnstrn = ");
 	printf("%s\n", ptr);
-	printf("%s", "strnstrn = ");
-	printf("%s\n\n", ptr2);
-	printf("%s\n", "size = 2");
-	ptr = ft_strnstr(big, little, 2);
-	ptr2 = strnstr(big, little, 2);
+//	printf("%s", "strnstrn = ");
+//	printf("%s\n\n", ptr2);
+	printf("%s\n", "size = 1");
+	ptr = ft_strnstr(big, little, 1);
+//	ptr2 = strnstr(big, little, 1);
 	printf("%s", "ft_strnstrn = ");
 	printf("%s\n", ptr);
-	printf("%s", "strnstrn = ");
-	printf("%s\n", ptr2);
+//	printf("%s", "strnstrn = ");
+//	printf("%s\n", ptr2);
 	return (0);
 } */

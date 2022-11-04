@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:34:15 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/04 14:49:31 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/04 16:34:50 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_strchr(const char *s, int c);
 void	*ft_strrchr(const char *s, int c);
 void	*ft_memchr(const void *s, int c, size_t n);
+void	*ft_calloc(size_t nmemb, size_t size);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_strdup(const char *s);
 
 #endif

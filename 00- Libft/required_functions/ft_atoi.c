@@ -6,38 +6,38 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:47:32 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/04 15:09:46 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/04 16:08:55 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	 int	i;
-	 int	result;
-	 int	sign;
+	int	i;
+	int	result;
+	int	sign;
 
-	 i = 0;
-	 result = 0;
-	 sign = 1;
-	 if (nptr[i] == 45)
-	 {
+	i = 0;
+	result = 0;
+	sign = 1;
+	if (nptr[i] == 45)
+	{
 		sign *= -1;
 		i++;
-	 }
-	 while (nptr[i] == 32)
-	 	i++;
-	 while (nptr[i] >= '0' && nptr[i] <= '9' && nptr[i] != '\0')
-	 {
+	}
+	while (nptr[i] == 32)
+		i++;
+	while (nptr[i] >= '0' && nptr[i] <= '9' && nptr[i] != '\0')
+	{
 		result = (nptr[i] - '0') + (result * 10);
 		i++;
-	 }
-	 result *= sign;
-	 return (result);
+	}
+	result *= sign;
+	return (result);
 }
 
-int		main(void)
+/* int		main(void)
 {
 	char a[] = "-1231as23";
 	char b[] = "-+1231as23";
@@ -76,4 +76,4 @@ int		main(void)
 	printf("%s", "atoi = ");
 	printf("%d\n\n", atoi(e));
 	return (0);
-}
+} */
