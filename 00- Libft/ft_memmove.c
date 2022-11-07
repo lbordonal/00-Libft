@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 11:26:29 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/04 21:14:33 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:41:51 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,18 +33,18 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 
 /* int	main(void)
 {
-	char	dest[] = "Lucas";
-	char	dest1[] = "Lucas";
-	char	src[] = "XYZ";
-	char	src1[] = "XYZ";
+	char	dest[] = "WXYZ";
+	char	dest1[] = "WXYZ";
+	char	src[] = "Lucas";
+	char	src1[] = "Lucas";
 
 	printf("%s", dest);
 	printf(" / ");
 	printf("%s", src);
 	printf("\n");
-	ft_memmove(dest, src, 2);
+	ft_memmove(dest, src, 3);
 	printf("%s", dest);
 	printf("\n");
-	memmove(dest1, src1, 2);;
+	memmove(dest1, src1, 3);;
 	printf("%s", dest1);
 } */
