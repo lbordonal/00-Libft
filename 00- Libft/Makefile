@@ -6,7 +6,7 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/04 17:40:34 by lbordona          #+#    #+#              #
-#    Updated: 2022/11/07 16:27:01 by lbordona         ###   ########.fr        #
+#    Updated: 2022/11/07 17:27:35 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,11 +36,13 @@ $(NAME): $(SRC_OBJS)
 clean:
 	@$(RM) $(SRC_OBJS)
 	@$(RM) a.out
+	@$(RM) libft.h.gch
 	@echo "CLEAN - Done!"
 
 fclean:
 	@$(RM) $(SRC_OBJS)
 	@$(RM) a.out
+	@$(RM) libft.h.gch
 	@$(RM) $(NAME)
 	@echo "FCLEAN - Done!"
 
