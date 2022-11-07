@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:27:41 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/07 16:37:45 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:46:00 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-	new = malloc(sizeof(char)*(ft_strlen(s1) + ft_strlen(s2) + 1));
+	new = malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
 	if (!new)
 		return (NULL);
 	while (s1[i] != '\0')
