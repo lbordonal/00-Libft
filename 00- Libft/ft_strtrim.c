@@ -6,13 +6,13 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:28:38 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/07 16:09:18 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:32:48 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 
-} */
+}
