@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 15:48:59 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/03 10:53:07 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/07 11:46:46 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,4 @@ void	*ft_memset(void *s, int c, size_t n)
 	memset(str, '.', 2);
 	printf("%s", str);
 	printf("\n");
-}
- */
+} */

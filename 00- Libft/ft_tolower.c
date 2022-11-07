@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:02:24 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/03 15:05:03 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:00:31 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,4 +45,5 @@ int	ft_tolower(int c)
 	printf("%s", "tolower = ");
 	printf("%c", tolower(b));
 	return (0);
-} */
+}
+ */

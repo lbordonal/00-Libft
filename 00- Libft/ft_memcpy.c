@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:54:34 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/03 12:00:56 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/07 15:03:05 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,8 +33,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 /* int	main(void)
 {
-	char	dest[] = "XXX";
-	char	dest1[] = "XXX";
+	char	dest[] = "WXYZ";
+	char	dest1[] = "WXYZ";
 	char	src[] = "Lucas";
 	char	src1[] = "Lucas";
 
