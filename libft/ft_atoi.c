@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 14:47:32 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/04 16:08:55 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:02:12 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,29 @@
 
 int	ft_atoi(const char *nptr)
 {
-	int	i;
 	int	result;
 	int	sign;
 
-	i = 0;
 	result = 0;
-	sign = 1;
-	if (nptr[i] == 45)
+	sign = 0;
+	while (*nptr == ' ' || *nptr == '\t' || *nptr == '\n'
+		|| *nptr == '\v' || *nptr == '\f' || *nptr == '\r')
+		nptr++;
+	if (*nptr == 43)
+		nptr++;
+	else if (*nptr == 45)
 	{
-		sign *= -1;
-		i++;
+		sign = 1;
+		nptr++;
 	}
-	while (nptr[i] == 32)
-		i++;
-	while (nptr[i] >= '0' && nptr[i] <= '9' && nptr[i] != '\0')
+	while (*nptr >= '0' && *nptr <= '9' && *nptr != '\0')
 	{
-		result = (nptr[i] - '0') + (result * 10);
-		i++;
+		result = (*nptr++ - '0') + (result * 10);
 	}
-	result *= sign;
-	return (result);
+	if (sign == 1)
+		return (-result);
+	else
+		return (result);
 }
 
 /* int		main(void)

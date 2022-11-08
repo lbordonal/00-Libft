@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 12:04:39 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/04 16:16:11 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/08 17:29:27 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		while ((big[i + j] != '\0') && (little[j] != '\0')
 			&& ((i + j) < len) && (big[i + j] == little[j]))
 		{
-			if (little[j + 1] != '\0')
+			if (little[j + 1] == '\0')
 				return ((char *)&(big[i]));
 			j++;
 		}
