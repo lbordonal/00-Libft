@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:30:33 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/08 14:38:18 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/08 14:48:26 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str - 32);
 	}
 
-int main()
+int	main(void)
 {
 	char str[10] = "hello.";
 	printf("The result is %s\n", str);
