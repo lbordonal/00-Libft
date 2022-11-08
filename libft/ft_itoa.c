@@ -6,55 +6,52 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:29:56 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/08 18:25:02 by lbordona         ###   ########.fr       */
+/*   Updated: 2022/11/08 23:10:51 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_digit_count(long int i)
+static int	absolute_value(int nbr)
+{
+	if (nbr < 0)
+		return (-nbr);
+	return (nbr);
+}
+
+static int	ft_digit_count(int nbr)
 {
 	int	count;
 
 	count = 0;
-	if (i < 0)
-	{
-		i *= -1;
+	if (nbr <= 0)
 		count++;
-	}
-	while (i > 0)
+	while (nbr != 0)
 	{
-		i /= 10;
 		count++;
+		nbr /= 10;
 	}
 	return (count);
 }
 
 char	*ft_itoa(int n)
 {
-	char		*str;
-	int			i;
-	long int	nb;
+	char	*str;
+	int		i;
 
-	nb = n;
-	i = ft_digit_count(nb);
-	if (!(str = malloc(sizeof(char) * (i + 1))))
+	i = ft_digit_count(n);
+	str = malloc(sizeof(char) * (i + 1));
+	if (!str)
 		return (NULL);
-	str[i--] = 0;
-	if (nb == 0)
-	{
-		str = ft_calloc(2, sizeof(char));
-		str[0] = 48;
-	}
-	if (nb < 0)
-	{
+	str[i--] = '\0';
+	if (n < 0)
 		str[0] = '-';
-		nb *= -1;
-	}
-	while (nb > 0)
+	else if (n == 0)
+		str[0] = 48;
+	while (n != 0)
 	{
-		str[i--] = nb % 10 + '0';
-		nb /= 10;
+		str[i--] = absolute_value(n % 10) + '0';
+		n /= 10;
 	}
 	return (str);
 }
