@@ -14,7 +14,7 @@ This repository contains coding developed at 42 Porto for Libft Project, from 02
 </p>
 
 
-## :notebook: [Subject](https://github.com/lbordonal/42-Piscine/tree/main/00-%20C%20Piscine%20Shell%2000) <br />
+## :notebook: [Subject](https://github.com/lbordonal/42-Cursus-00-Libft/blob/main/libft/Subject/en.subject.pdf) <br />
 
 
 <h2 align="left">
