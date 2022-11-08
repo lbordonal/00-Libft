@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-This repository contains coding developed at 42 Porto Common Core, from 02/nov/2022 to ...
+This repository contains coding developed at 42 Porto for Libft Project, from 02/11/2022 to ...
 </p>
 
 
