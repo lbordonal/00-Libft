@@ -34,4 +34,11 @@ This repository contains coding developed at 42 Porto for Libft Project, from 02
 </h2>
 
 `ft_lstnew` `ft_lstadd_front` `ft_lstsize` `ft_lstlast` `ft_lstadd_back` `ft_lstdelone` `ft_lstclear` `ft_lstiter` `ft_lstmap`  <br />
+<br />
+<br />
+
+<p align="center">
+:warning: <strong> Makefile used only for tests. </strong> :warning:
+</p>
+
 
