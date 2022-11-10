@@ -3,6 +3,7 @@
 </h1>
 
 <p align="center">
+	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success" />
 	<img src="https://img.shields.io/github/languages/code-size/lbordonal/42-Cursus-00-Libft" />
 	<img alt="Code language count" src="https://img.shields.io/github/languages/count/lbordonal/42-Cursus-00-Libft" />
 	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lbordonal/42-Cursus-00-Libft" />
@@ -41,5 +42,14 @@ This repository contains coding developed at 42 Porto for Libft Project, from 02
 :warning: <strong> Makefile used only for tests. </strong> :warning: <br />
 If you want the submitted Makefile, just ask me!
 </p>
+
+<h2 align="left">
+	:memo: Tests
+</h2>
+
+[libft-unit-test](https://github.com/alelievr/libft-unit-test)  <br />
+[libft-war-machine](https://github.com/0x050f/libft-war-machine)  <br />
+[Libftest](https://github.com/jtoty/Libftest)  <br />
+
 
 
