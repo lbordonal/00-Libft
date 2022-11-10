@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-This repository contains coding developed at 42 Porto for Libft Project, from 02/11/2022 to ...
+This repository contains coding developed at 42 Porto for Libft Project, from 02/11/2022 to 10/11/2022.
 </p>
 
 
@@ -43,13 +43,15 @@ This repository contains coding developed at 42 Porto for Libft Project, from 02
 If you want the submitted Makefile, just ask me!
 </p>
 
+
 <h2 align="left">
 	:memo: Tests
 </h2>
 
-[libft-unit-test](https://github.com/alelievr/libft-unit-test)  <br />
-[libft-war-machine](https://github.com/0x050f/libft-war-machine)  <br />
-[Libftest](https://github.com/jtoty/Libftest)  <br />
+- [libft-unit-test][1]
+- [libft-war-machine][2]
+- [Libftest][3]
 
-
-
+[1]: https://github.com/alelievr/libft-unit-test
+[2]: https://github.com/0x050f/libft-war-machine
+[3]: https://github.com/jtoty/Libftest
