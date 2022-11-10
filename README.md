@@ -38,7 +38,8 @@ This repository contains coding developed at 42 Porto for Libft Project, from 02
 <br />
 
 <p align="center">
-:warning: <strong> Makefile used only for tests. </strong> :warning:
+:warning: <strong> Makefile used only for tests. </strong> :warning: <br />
+If you want the submitted Makefile, just ask me!
 </p>
 
 
