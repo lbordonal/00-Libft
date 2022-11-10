@@ -15,7 +15,7 @@ This repository contains coding developed at 42 Porto for Libft Project, from 02
 </p>
 
 
-## :notebook: [Subject](https://github.com/lbordonal/42-Cursus-00-Libft/blob/main/libft/Subject/en.subject.pdf) <br />
+## :notebook: [Subject](https://github.com/lbordonal/42-Cursus-00-Libft/blob/main/Subject/en.subject.pdf) <br />
 
 
 <h2 align="left">
