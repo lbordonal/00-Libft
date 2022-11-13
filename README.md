@@ -1,13 +1,13 @@
 <h1 align="center">
-	42 Cursus - 00-Libft
+	42 Cursus - Libft
 </h1>
 
 <p align="center">
 	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success" />
-	<img src="https://img.shields.io/github/languages/code-size/lbordonal/42-Cursus-00-Libft" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/lbordonal/42-Cursus-00-Libft" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lbordonal/42-Cursus-00-Libft" />
-	<img src="https://img.shields.io/github/last-commit/lbordonal/42-Cursus-00-Libft" />
+	<img src="https://img.shields.io/github/languages/code-size/lbordonal/00-Libft" />
+	<img alt="Code language count" src="https://img.shields.io/github/languages/count/lbordonal/00-Libft" />
+	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lbordonal/00-Libft" />
+	<img src="https://img.shields.io/github/last-commit/lbordonal/00-Libft" />
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@ This repository contains coding developed at 42 Porto for Libft Project, from 02
 </p>
 
 
-## :notebook: [Subject](https://github.com/lbordonal/42-Cursus-00-Libft/blob/main/Subject/en.subject.pdf) <br />
+## :notebook: [Subject](https://github.com/lbordonal/00-Libft/blob/main/Subject/en.subject.pdf) <br />
 
 
 <h2 align="left">
