@@ -5,13 +5,13 @@
 <p align="center">
 	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success" />
 	<img src="https://img.shields.io/github/languages/code-size/lbordonal/00-Libft" />
-	<img alt="Code language count" src="https://img.shields.io/github/languages/count/lbordonal/00-Libft" />
-	<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/lbordonal/00-Libft" />
+	<img src="https://img.shields.io/github/languages/count/lbordonal/00-Libft" />
+	<img src="https://img.shields.io/github/languages/top/lbordonal/00-Libft" />
 	<img src="https://img.shields.io/github/last-commit/lbordonal/00-Libft" />
 </p>
 
 <p align="center">
-This repository contains coding developed at 42 Porto for Libft Project, from 02/11/2022 to 10/11/2022.
+This repository contains code developed at 42 Porto for Libft Project, from 02/11/2022 to 10/11/2022.
 </p>
 
 
