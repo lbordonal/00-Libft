@@ -14,8 +14,11 @@
 This repository contains code developed at 42 Porto for Libft Project, from 02/11/2022 to 10/11/2022.
 </p>
 
-
-## :notebook: [Subject](https://github.com/lbordonal/00-Libft/blob/main/Subject/en.subject.pdf) <br />
+<h2 align="left">
+	 :notebook: Subject
+</h2>
+<a href="https://github.com/lbordonal/00-Libft/blob/main/Subject/en.subject.pdf">Click here</a> for the subject of this project.
+<br /><br />
 
 
 <h2 align="left">
