@@ -48,7 +48,7 @@ If you want the submitted Makefile, just ask me!
 
 
 <h2 align="left">
-	:memo: Tests
+	:memo: Testers
 </h2>
 
 - [libft-unit-test][1]
