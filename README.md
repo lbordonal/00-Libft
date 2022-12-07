@@ -58,3 +58,10 @@ If you want the submitted Makefile, just ask me!
 [1]: https://github.com/alelievr/libft-unit-test
 [2]: https://github.com/0x050f/libft-war-machine
 [3]: https://github.com/jtoty/Libftest
+
+<br />
+<br />
+<hr/>
+<p align="center">
+This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>. 
+</p>
