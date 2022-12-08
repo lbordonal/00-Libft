@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/score-125%20%2F%20100-success" />
+	<img src="https://img.shields.io/badge/score-125%20%2F%20100%20%E2%98%85-9cf" />
 	<img src="https://img.shields.io/github/languages/code-size/lbordonal/00-Libft" />
 	<img src="https://img.shields.io/github/languages/count/lbordonal/00-Libft" />
 	<img src="https://img.shields.io/github/languages/top/lbordonal/00-Libft" />
@@ -63,5 +63,5 @@ If you want the submitted Makefile, just ask me!
 <br />
 <hr/>
 <p align="center">
-This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>. 
+This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>.
 </p>
