@@ -61,7 +61,15 @@ If you want the submitted Makefile, just ask me!
 
 <br />
 <br />
+
+<p align="center">
+:pencil2:  <a href="https://github.com/lbordonal/00-Libft/tree/main/new%20libft">new libft </a> is an updated version with more functions than required in subject of this project.  :pencil2: <br />
+</p>
+
 <hr/>
+
+
+
 <p align="center">
 This work is published under the terms of <a href="https://github.com/gcamerli/42unlicense">42 Unlicense</a>.
 </p>
