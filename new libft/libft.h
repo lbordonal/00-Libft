@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:34:15 by lbordona          #+#    #+#             */
-/*   Updated: 2023/01/03 15:40:30 by lbordona         ###   ########.fr       */
+/*   Updated: 2023/01/20 13:12:46 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@
 # include <stdarg.h>
 # include <stdint.h>
 # include <fcntl.h>
+# include <limits.h>
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 100
@@ -34,6 +35,13 @@ typedef struct s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct s_stack
+{
+	int			*stack;
+	int			*finalpos;
+	int			len;
+}				t_stack;
+
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
@@ -41,6 +49,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size);
 t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -66,6 +75,7 @@ int		ft_putptr_count(unsigned long long ptr);
 int		ft_ptrlen(uintptr_t ptr);
 int		ft_putpercent(void);
 int		ft_isstringdigit(char *string);
+int		ft_checkstack(t_stack *stack);
 
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);
@@ -83,10 +93,13 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
+void	ft_delete(void *data);
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_puthex(unsigned int n, const char type);
 void	ft_putptr(uintptr_t ptr);
+void	ft_printlist(t_list *list);
+void	ft_printstack(t_stack *stack_a);
 
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);

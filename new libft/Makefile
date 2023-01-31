@@ -6,7 +6,7 @@
 #    By: lbordona <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/04 17:40:34 by lbordona          #+#    #+#              #
-#    Updated: 2023/01/03 15:39:12 by lbordona         ###   ########.fr        #
+#    Updated: 2023/01/19 00:08:19 by lbordona         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c \
 	ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_lstnew.c \
 	ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
 	ft_lstclear.c ft_lstiter.c ft_lstmap.c ft_isstringdigit.c ft_args_csp.c \
-	ft_args_diu.c ft_args_xXpercent.c ft_printf.c get_next_line.c
+	ft_args_diu.c ft_args_xXpercent.c ft_printf.c get_next_line.c ft_printlist.c \
+	ft_stack.c
 
 CC = cc
 RM = rm -f
