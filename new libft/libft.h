@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:34:15 by lbordona          #+#    #+#             */
-/*   Updated: 2023/01/20 13:12:46 by lbordona         ###   ########.fr       */
+/*   Updated: 2023/02/25 15:50:50 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,11 @@ typedef struct s_list
 typedef struct s_stack
 {
 	int			*stack;
-	int			*finalpos;
+	int			*index;
 	int			len;
+	int			bottom;
+	int			top;
+	int			mid;
 }				t_stack;
 
 size_t	ft_strlen(const char *s);
@@ -50,11 +53,11 @@ t_list	*ft_lstnew(void *content);
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
+int		ft_isdigitorsignal(char c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
@@ -76,6 +79,9 @@ int		ft_ptrlen(uintptr_t ptr);
 int		ft_putpercent(void);
 int		ft_isstringdigit(char *string);
 int		ft_checkstack(t_stack *stack);
+int		ft_str_is_digit(char *str);
+
+long	ft_atol(const char *str);
 
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);

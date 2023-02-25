@@ -1,44 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_str_is_digit.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/02 15:07:04 by lbordona          #+#    #+#             */
-/*   Updated: 2023/02/24 09:23:10 by lbordona         ###   ########.fr       */
+/*   Created: 2023/02/25 15:50:33 by lbordona          #+#    #+#             */
+/*   Updated: 2023/02/25 15:52:47 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int	ft_str_is_digit(char *str)
 {
-	if (c >= 48 && c <= 57)
-		return (1);
-	else
+	int	i;
+
+	i = 0;
+	if (str[i] == 43 || str[i] == 45)
+		i++;
+	while (str[i] != '\0')
+	{
+		if (str[i] < 48 || str[i] > 57)
+			return (0);
+		i++;
+	}
+	if ((str[0] == 43 || str[0] == 45) && i == 1)
 		return (0);
+	return (1);
 }
-
-int	ft_isdigitorsignal(char c)
-{
-	if ((c >= '0' && c <= '9') || (c == '-' || c == '+') || c == ' ')
-		return (1);
-	return (0);
-}
-
-/* int	main(void)
-{
-	int		a = 'a';
-	int		b = '1';
-
-	printf("%d", ft_isdigit(a));
-	printf("\n");
-	printf("%d", isdigit(a));
-	printf("\n");
-	printf("\n");
-	printf("%d", ft_isdigit(b));
-	printf("\n");
-	printf("%d", isdigit(b));
-	return (0);
-} */
