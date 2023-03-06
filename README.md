@@ -1,13 +1,13 @@
-<h1 align="center">
-	42 Cursus - Libft
-</h1>
+<p align="center">
+  <img src="https://github.com/lbordonal/lbordonal/blob/main/.images/42_Cursus_-_Libft.png">
+</p>
 
 <p align="center">
-	<img src="https://img.shields.io/badge/score-125%20%2F%20100%20%E2%98%85-9cf" />
-	<img src="https://img.shields.io/github/languages/code-size/lbordonal/00-Libft" />
-	<img src="https://img.shields.io/github/languages/count/lbordonal/00-Libft" />
-	<img src="https://img.shields.io/github/languages/top/lbordonal/00-Libft" />
-	<img src="https://img.shields.io/github/last-commit/lbordonal/00-Libft" />
+	<img src="https://img.shields.io/badge/score-125%20%2F%20100%20%E2%98%85-9cf?style=for-the-badge" />
+	<img src="https://img.shields.io/github/languages/code-size/lbordonal/00-Libft?style=for-the-badge" />
+	<img src="https://img.shields.io/github/languages/count/lbordonal/00-Libft?style=for-the-badge" />
+	<img src="https://img.shields.io/github/languages/top/lbordonal/00-Libft?style=for-the-badge" />
+	<img src="https://img.shields.io/github/last-commit/lbordonal/00-Libft?style=for-the-badge" />
 </p>
 
 <p align="center">
