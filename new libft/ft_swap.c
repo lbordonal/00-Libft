@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atol.c                                          :+:      :+:    :+:   */
+/*   ft_swap.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/02/25 15:48:28 by lbordona          #+#    #+#             */
-/*   Updated: 2023/04/04 15:31:53 by lbordona         ###   ########.fr       */
+/*   Created: 2023/03/21 23:42:15 by lbordona          #+#    #+#             */
+/*   Updated: 2023/03/21 23:43:00 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long	ft_atol(const char *str)
+void	ft_swap(int *a, int *b)
 {
-	long	result;
-	int		sign;
+	int	temp;
 
-	result = 0;
-	sign = 1;
-	while ((*str >= 9 && *str <= 13) || *str == 32)
-		str++;
-	if (*str == '+' || *str == '-')
-	{
-		if (*str == '-')
-			sign *= -1;
-		str++;
-	}
-	while (ft_isdigit((int)*str))
-	{
-		result = result * 10 + (*str - '0');
-		str++;
-	}
-	return (result * sign);
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }

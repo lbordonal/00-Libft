@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:34:15 by lbordona          #+#    #+#             */
-/*   Updated: 2023/02/25 15:50:50 by lbordona         ###   ########.fr       */
+/*   Updated: 2023/04/10 16:04:09 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,13 @@ typedef struct s_list
 
 typedef struct s_stack
 {
-	int			*stack;
-	int			*index;
-	int			len;
+	int			*stack_a;
+	int			*stack_b;
+	int			len_a;
+	int			len_b;
 	int			bottom;
-	int			top;
 	int			mid;
+	int			top;
 }				t_stack;
 
 size_t	ft_strlen(const char *s);
@@ -105,7 +106,9 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_puthex(unsigned int n, const char type);
 void	ft_putptr(uintptr_t ptr);
 void	ft_printlist(t_list *list);
-void	ft_printstack(t_stack *stack_a);
+void	ft_printstack_a(t_stack *stack);
+void	ft_printstack_b(t_stack *stack);
+void	ft_swap(int *a, int *b);
 
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);

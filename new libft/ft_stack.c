@@ -6,49 +6,46 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/18 23:41:06 by lbordona          #+#    #+#             */
-/*   Updated: 2023/02/23 18:39:56 by lbordona         ###   ########.fr       */
+/*   Updated: 2023/03/22 00:01:17 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_printstack(t_stack *stack_a)
+void	ft_printstack_a(t_stack *stack)
 {
 	int	i;
 
 	i = 0;
-	if (stack_a->len == 0)
-		ft_printf("%s\n", "-- stack empty --");
-	while (i < stack_a->len)
+	if (stack->len_a == 0)
+		ft_printf("%s\n", "-- Stack A - Empty --");
+	else
 	{
-		ft_printf("|%d|  |%d|\n", stack_a->stack[i], stack_a->index[i]);
-		i++;
+		ft_printf("%s\n", "-- Stack A --");
+		while (i < stack->len_a)
+		{
+			ft_printf("|%d|\n", stack->stack_a[i]);
+			i++;
+		}
 	}
+	ft_printf("\n");
 }
 
-int	ft_checkstack(t_stack *stack)
+void	ft_printstack_b(t_stack *stack)
 {
 	int	i;
-	int	j;
-	int	flag;
 
 	i = 0;
-	flag = 0;
-	while ((i < stack->len) && (flag == 0))
+	if (stack->len_b == 0)
+		ft_printf("%s\n", "-- Stack B - Empty --");
+	else
 	{
-		j = i + 1;
-		while (j < stack->len)
+		ft_printf("%s\n", "-- Stack B --");
+		while (i < stack->len_b)
 		{
-			if ((stack->stack[i] == stack->stack[j])
-				|| (stack->stack[j] > INT_MAX) || (stack->stack[j] < INT_MIN))
-			{
-				flag = 1;
-				ft_printf("%s\n", "Stack error! :(");
-				break ;
-			}
-			j++;
+			ft_printf("|%d|\n", stack->stack_b[i]);
+			i++;
 		}
-		i++;
 	}
-	return (flag);
+	ft_printf("\n");
 }
