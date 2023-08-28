@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 10:34:15 by lbordona          #+#    #+#             */
-/*   Updated: 2023/04/10 16:04:09 by lbordona         ###   ########.fr       */
+/*   Updated: 2023/08/23 18:33:42 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 # include <limits.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 100
+#  define BUFFER_SIZE 128
 # endif
 
 typedef struct s_list
@@ -110,6 +110,7 @@ void	ft_printstack_a(t_stack *stack);
 void	ft_printstack_b(t_stack *stack);
 void	ft_swap(int *a, int *b);
 
+char	*ft_strappend(char **s1, const char *s2);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);

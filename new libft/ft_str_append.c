@@ -1,42 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_str_append.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/03 15:07:22 by lbordona          #+#    #+#             */
-/*   Updated: 2023/04/20 23:19:43 by lbordona         ###   ########.fr       */
+/*   Created: 2023/08/23 18:32:57 by lbordona          #+#    #+#             */
+/*   Updated: 2023/08/23 18:33:14 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_strchr(const char *s, int c)
+char	*ft_strappend(char **s1, const char *s2)
 {
-	int	i;
+	char	*str;
 
-	i = 0;
-	if (!s)
+	if (!*s1 || !s2)
 		return (NULL);
-	while (s[i] != c)
-	{
-		if (s[i] == '\0')
-			return (NULL);
-		i++;
-	}
-	return ((char *)s + i);
+	str = (char *)ft_calloc((ft_strlen(*s1) + ft_strlen(s2)) + 1, sizeof(char));
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, *s1, ft_strlen(*s1) + 1);
+	ft_strlcat(str, s2, ft_strlen(*s1) + ft_strlen(s2) + 1);
+	free(*s1);
+	return (str);
 }
-
-/* int		main(void)
-{
-	char str[] = "Lucas";
-	char	a;
-
-	a = 'u';
-	ft_strchr(str, a);
-	printf("%s", (char *)ft_strchr(str, a));
-	printf("\n");
-	printf("%s", strchr(str, a));
-	return (0);
-} */

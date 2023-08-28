@@ -6,7 +6,7 @@
 /*   By: lbordona <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 15:27:41 by lbordona          #+#    #+#             */
-/*   Updated: 2022/11/07 17:46:00 by lbordona         ###   ########.fr       */
+/*   Updated: 2023/04/20 23:25:08 by lbordona         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,31 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
+	int		i;
+	int		j;
+	char	*str;
+	size_t	lentotal;
+
+	lentotal = (ft_strlen(s1) + ft_strlen(s2));
+	str = malloc(sizeof(char) * (lentotal + 1));
+	if (!str)
+		return (NULL);
+	i = 0;
+	while (s1 && *(s1 + i))
+	{
+		*(str + i) = *(s1 + i);
+		i++;
+	}
+	j = 0;
+	while (s2 && *(s2 + j))
+	{
+		*(str + i++) = *(s2 + j++);
+	}
+	*(str + i) = '\0';
+	return (str);
+}
+
+/* {
 	char	*new;
 	int		i;
 	int		j;
@@ -35,7 +60,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	}
 	new[i + j] = '\0';
 	return (new);
-}
+} */
 
 /* int	main(void)
 {
